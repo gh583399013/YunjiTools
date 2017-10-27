@@ -35,6 +35,7 @@
 
     <modules>
         <module>FixTools</module>
+        <module>SQLCreator</module>
     </modules>
 
     <build>
