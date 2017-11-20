@@ -50,7 +50,13 @@ public class SQLCreator {
         System.out.println("输出文件为:" + fileName);
     }
 
-    public void func2(){
-        System.out.println("222");
+    public void createAddColumn2(){
+        String text = "alter table t_supplier_compensate add COLUMN item_price double DEFAULT NULL COMMENT '商品单价' before create_time,"
+                +"add COLUMN qty int(11) DEFAULT NULL COMMENT '审核时间' before create_time;";
+    }
+
+    public void modifyColumn(){
+        System.out.println("alter table t_supplier_compensate modify COLUMN compensate_one_reason int(11) DEFAULT NULL COMMENT '补偿一级原因';");
+        System.out.println("alter table t_supplier_compensate modify COLUMN compensate_two_reason int(11) DEFAULT NULL COMMENT '补偿二级原因';");
     }
 }
